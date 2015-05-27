@@ -10,7 +10,7 @@
 
 <script type="text/javascript">
 $( document ).ready(function() {
-	$("ul li span").click(function() {
+	$("ul li h2").click(function() {
 		$(this).siblings().toggle(400);
 	});
 });
@@ -19,16 +19,20 @@ $( document ).ready(function() {
 <style type="text/css">
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  letter-spacing: 0.075em;
-  line-height: 1.65em;
+    letter-spacing: 0.075em;
+}
+p {
+	line-height: 1.4em;
 }
 #ingress {
 	font-style: italic;
 }
 h1 {
 	font-weight: 800;
-	font-size: 2em;
+	font-size: 2.5em;
+	line-height: 1em;
 }
+
 ul {
 	padding: 0;
 }
@@ -36,26 +40,39 @@ ul li {
 	list-style: none;
 	margin-bottom: 1em;
 }
-ul li span {
+ul li h2 {
 	font-weight: 700;
 	font-size: 1.5em;
+	line-height: 1.2em;
+	cursor: pointer;
+	border-bottom: 1px dashed;
+	padding-bottom: 0.2em;
 }
 
 ul li div {
 	display: none;
+	margin-left: 2em;
+}
+
+@media (min-width: 600px) {
+	section {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 </style>
 </head>
 <body>
 
-<div class="inner">
+<section>
 
 <h1>Better digital services for a better world</h1>
 <p id="ingress">In an increasingly digital world, they way we create services is not a trivial matter. It has an impact on the quality of life of millions of people. We need principles for creating services that have a positive impact on users’ lives of their users, fulfil the requirements of owners and instil a sense of pride in builders.</p>
 
 <ul>
-	<li><span>A good service is built on trust.</span>
+	<li><h2>A good service is built on trust.</h2>
 		<div>
 		<p>Trust rules. It’s an essential ingredient in the relationship between user and owner, as well as owner and vendor.
 		<p>Requests for tenders are transparent and correspond to the project in question.
@@ -63,26 +80,26 @@ ul li div {
 		<p>The user understands what the service does and how it works. What the user commits to and how his or her information and actions are utilized in the service should be absolutely clear.
 		</div>
 	</li>
-	<li><span>Taking ownership and prudent buying are essential for a successful project.</span>
+	<li><h2>Taking ownership and prudent buying are essential for a successful project.</h2>
 		<div>
 		<p>Know what you want, buy what you need and own it.
 		<p>The service meets the users’ changing needs. It fulfils the owner’s goals. Direction is clear for the vendor. The team has the clout to control how they work and choose the best possible solutions.
 		<p>Everyone works towards a common goal. Buyer and builder succeed or fail together. The team listens to and respects the customer. No one optimizes their own sphere to the detriment of the other’s.
  		</div>
 	</li>
-	<li><span>Doing the right things is more important than doing things right.</span>
+	<li><h2>Doing the right things is more important than doing things right.</h2>
 		<div>
 		<p>Make sure the issues you tackle actually exist and are important enough to solve.
 		<p>The service must provide real value to the user. Every development step the service goes through must be a usable and value-creating whole. A constant feedback-build cycle is the best way to make sure real value is delivered.
  		</div>
  	</li>
-	<li><span>A good digital service puts user needs first</span>
+	<li><h2>A good digital service puts user needs first</h2>
 		<div>
 		<p>Awesome things don’t happen accidentally. Designing for the user makes them happen. Users should be involved in validating the service before the actual building commences.
 		<p>Good design is created when the people building the service make user experience the linchpin of the design process and are open to learning from user feedback. The multidisciplinary team building the service has the capability to take it from understanding user needs to a finished product. The team must bring together expertise in business, concept design, graphic design, UI design, development and analytics.
 		</div>
  	</li>
-	<li><span>A good digital service is never complete</span>
+	<li><h2>A good digital service is never complete</h2>
 		<div>
 		<p>Continuous improvement is the key to success.
 		<p>Maintainability is in the interest of both the service owner and builder. It enables long-term development, while keeping costs at a sane level. Utilising open source and making sure IPR is handled smartly makes using multiple vendors or changing them an option. All of which translates into optimal profits for the service owner.
@@ -92,7 +109,7 @@ ul li div {
 	</li>
 </ul>
 
-</div>
+</section>
 
 </body>
 </html>
