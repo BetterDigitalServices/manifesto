@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
  <title>Academy Manifesto</title>
-<link href='//fonts.googleapis.com/css?family=Raleway:400,300,900,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,900,700' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
 
 <script type="text/javascript">
@@ -20,17 +20,25 @@ $( document ).ready(function() {
 body {
 	font-family: Raleway, Helvetica, Arial, sans-serif;
     letter-spacing: 0.075em;
+    margin: 0;
+	background: #7291b0;
 }
 p {
-	line-height: 1.4em;
+	line-height: 1.5em;
 }
 #ingress {
+	padding: 1.5em;
 	font-weight: 300;
 }
 h1 {
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+	max-width: 12em;
 	font-weight: 900;
 	font-size: 2.5em;
-	line-height: 0.9em;
+	line-height: 1.1em;
+	text-shadow: 3px 3px #ccc;
 }
 
 ul {
@@ -54,9 +62,22 @@ ul li div {
 	margin-left: 2em;
 }
 
+section {
+	padding: 1em;
+	padding-bottom: 2em;
+}
+
+#first {
+	background: #eee;
+}
+
+#second {
+	background: #7291b0;
+	color: #eee;
+}
 
 @media (min-width: 600px) {
-	section {
+	section .wrap {
         width: 600px;
         margin-left: auto;
         margin-right: auto;
@@ -67,11 +88,15 @@ ul li div {
 </head>
 <body>
 
-<section>
-
+<section id="first">
+<div class="wrap">
 <h1>Better digital services for a better world</h1>
 <p id="ingress">In an increasingly digital world, they way we create services is not a trivial matter. It has an impact on the quality of life of millions of people. We need principles for creating services that have a positive impact on users’ lives of their users, fulfil the requirements of owners and instil a sense of pride in builders.</p>
+</div>
+</section>
 
+<section id="second">
+<div class="wrap">
 <ul>
 	<li><h2>A good service is built on trust.</h2>
 		<div>
@@ -109,7 +134,7 @@ ul li div {
 		</div>
 	</li>
 </ul>
-
+</div>
 </section>
 
 </body>
