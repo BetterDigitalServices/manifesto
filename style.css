@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Baskerville;
+    src: url(fonts/Baskerville120Pro.otf);
+}
+
+@font-face {
+    font-family: ReneBieder;
+    src: url(fonts/Rene_Bieder-Campton_Medium.otf);
+}
+
+@font-face {
+    font-family: ReneBieder;
+    src: url(fonts/Rene_Bieder-Campton_Bold.otf);
+    font-weight: bold;
+}
+
+body {
+	font-family: Baskerville, serif;
+    letter-spacing: 0.075em;
+    margin: 0;
+    padding-bottom: 3em;
+    background: #d3ecdf;
+	color: #203B6A;
+}
+p {
+	line-height: 1.5em;
+}
+#ingress {
+	padding: 1.5em;
+	font-weight: 300;
+}
+h1 {
+	font-family: ReneBieder, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+	max-width: 12em;
+	font-weight: 900;
+	font-size: 2.5em;
+	line-height: 1.1em;
+	text-shadow: 2px 2px #ccc;
+}
+
+ul {
+	padding: 0;
+}
+ul li {
+	list-style: none;
+	margin-bottom: 1em;
+}
+ul li h2 {
+	font-family: ReneBieder, sans-serif;
+	font-weight: normal;
+	font-size: 1.4em;
+	line-height: 1.2em;
+	cursor: pointer;
+	border-bottom: 1px dashed;
+	padding: 0.2em;
+	padding-top: 1em;
+}
+
+ul li h2 .arrow {
+    float: right;
+    font-size: 0.7em;
+    transition: 0.8s ease-in-out;
+}
+
+ul li div {
+	display: none;
+	margin-left: 2em;
+}
+
+section {
+	padding: 1em;
+	margin-bottom: 1.5em;
+}
+
+#first {
+	background: #fff;
+    box-shadow: 0 6px 6px rgba(32,59,106,.2);
+}
+
+#second {
+    background: #d3ecdf;
+}
+
+@media (min-width: 600px) {
+	.wrap {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
