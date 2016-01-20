@@ -23,23 +23,39 @@ body {
 	color: #203B6A;
 }
 p {
-	line-height: 1.5em;
+  line-height: 1.5em;
+  margin: 0.5em;
 }
+
+header {
+  min-height: 90px;
+}
+
+header a {
+  margin-top: 10px;
+  margin-left: 12px;
+  padding: 10px;
+  display: inline-block;
+}
+
 #ingress {
-	padding: 1.5em;
-	font-weight: 300;
+  padding: 0.2em 1.5em;
+  font-weight: 300;
 }
 h1 {
-	font-family: ReneBieder, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-	text-align: center;
-	max-width: 12em;
-	font-weight: 900;
-	font-size: 2.5em;
-	line-height: 1.1em;
-	text-shadow: 2px 2px #ccc;
+  font-family: ReneBieder, sans-serif;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 12em;
+  font-weight: 500;
+  font-size: 4em;
+  line-height: 1.1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
 }
+
 
 ul {
 	padding: 0;
@@ -71,23 +87,35 @@ ul li div {
 }
 
 section {
-	padding: 1em;
-	margin-bottom: 1.5em;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
-#first {
+header {
 	background: #fff;
     box-shadow: 0 6px 6px rgba(32,59,106,.2);
 }
 
 #second {
-    background: #d3ecdf;
+  background: #fff;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 599px) {
 	.wrap {
         width: 600px;
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+@media(min-width: 600px) and (max-width: 900px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media(max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
 }
